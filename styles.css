@@ -12,6 +12,15 @@ body {
     background-color: #fff;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode a {
+    color: #66ccff;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1022,5 +1031,3 @@ body {
     font-size: 1rem;
     vertical-align: middle;
 }
-
-.footer 
