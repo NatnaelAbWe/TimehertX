@@ -72,6 +72,32 @@
         <button class="btn-text">Enroll <img class="right-arrows" src="./asset/icons/arrow-right-solid.svg" alt="right-arrow"></button>
     </div>
 </section>
+<!-- Audience Toggle Section -->
+<section class="audience-toggle-section">
+    <h2>Choose Your Experience</h2>
+    <div class="audience-toggle">
+        <label class="switch">
+            <input type="checkbox" id="audienceToggle">
+            <span class="slider"></span>
+        </label>
+        <div class="labels">
+            <span class="label-students">For Students</span>
+            <span class="label-mentors">For Mentors</span>
+        </div>
+    </div>
+
+    <div class="audience-content">
+        <div class="content students active">
+            <h3>Welcome, Students!</h3>
+            <p>Explore interactive courses, personalized learning paths, and 24/7 support to help you succeed.</p>
+        </div>
+        <div class="content mentors">
+            <h3>Welcome, Mentors!</h3>
+            <p>Access teaching resources, mentor dashboards, and tools to support and guide your students.</p>
+        </div>
+    </div>
+</section>
+
 
 <!-- Our Journey -->
 <section class="journey">
@@ -104,10 +130,12 @@
 <section class="testimonials">
     <div class="stars">★★★★★</div>
 
+    <!-- Testimonials Container -->
+<div class="testimonials-container">
+    <!-- Slide 1 -->
     <div class="testimonial active">
         <p class="testimonial-text">
-            "TimehertX transformed my learning experience, making complex topics accessible and engaging! 
-            I couldn't have aced my exams without their support!"
+            "TimehertX transformed my learning experience!"
         </p>
         <div class="profile">
             <img src="./asset/img/gift-habeshaw-kSTcz5gE018-unsplash.jpg" alt="Amina Tesfaye" class="avatar">
@@ -118,15 +146,45 @@
         </div>
     </div>
 
-    <!-- Carousel Arrows -->
-    <button class="carousel-control prev"><img src="./asset/icons/arrow-left-solid.svg" alt="left-arrow"></button>
-    <button class="carousel-control next"><img src="./asset/icons/arrow-right-solid.svg" alt="right-arrow"></button>
-
-    <!-- Dots -->
-    <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
+    <!-- Slide 2 -->
+    <div class="testimonial">
+        <p class="testimonial-text">
+            "An amazing platform — I could personalize my learning!"
+        </p>
+        <div class="profile">
+            <img src="./asset/img/gift-habeshaw-kSTcz5gE018-unsplash.jpg" alt="John Doe" class="avatar">
+            <div class="profile-info">
+                <h4>John Doe</h4>
+                <p>Mentor</p>
+            </div>
+        </div>
     </div>
+
+    <!-- Slide 3 -->
+    <div class="testimonial">
+        <p class="testimonial-text">
+            "Incredible support, I passed my entrance exam thanks to TimehertX!"
+        </p>
+        <div class="profile">
+            <img src="./asset/img/abenezer-shewaga-HMzkZDke6yY-unsplash.jpg" alt="Sara Lee" class="avatar">
+            <div class="profile-info">
+                <h4>Sara Lee</h4>
+                <p>Student</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Carousel Arrows -->
+<button class="carousel-control prev"><img src="./asset/icons/arrow-left-solid.svg" alt="left-arrow"></button>
+<button class="carousel-control next"><img src="./asset/icons/arrow-right-solid.svg" alt="right-arrow"></button>
+
+<!-- Dots -->
+<div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
 </section>
 
 
@@ -325,6 +383,27 @@
         </div>
     </div>
 </section>
+<!-- Chatbot  -->
+<section class="chatbot">
+    <h2>Chat with us 🤖</h2>
+    <div class="chat-window" id="chatWindow">
+
+    </div>
+    <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+    </div>
+</section>
+<!-- Brand Bar -->
+<section class="brand-bar">
+    <div class="brand-bar-track">
+        <div class="brand-item">🚀 Resilient</div>
+        <div class="brand-item">🌍 Local</div>
+        <div class="brand-item">⏳ Timely</div>
+        <div class="brand-item">💡 Innovative</div>
+        <div class="brand-item">🤝 Community Driven</div>
+    </div>
+</section>
 
 <!-- Footer -->
 <footer class="footer">
@@ -374,6 +453,11 @@
             </div>
         </div>
     </div>
+    <!-- Visitor Counter -->
+    <div class="visitor-counter" id="visitorCounter">
+        You have visited this site 0 times.
+    </div>
+
 
     <hr>
 

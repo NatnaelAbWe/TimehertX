@@ -29,7 +29,7 @@ body.dark-mode a {
 
 /* Header */
 .header {
-    background: #f8f8f8;
+    background: #182740;
     padding: 1rem 0;
     border-bottom: 1px solid #ddd;
     height: 78px;
@@ -49,7 +49,7 @@ body.dark-mode a {
 
 .header nav a {
     text-decoration: none;
-    color: #333;
+    color: #eaf0f9;
     font-weight: bold;
 }
 
@@ -205,6 +205,121 @@ body.dark-mode a {
     align-items: center;
     gap: 0.5rem;
 }
+/* Audience Toggle Section */
+.audience-toggle-section {
+    padding: 6rem 4rem;
+    background-color: #f8f9fb;
+    text-align: center;
+}
+
+.audience-toggle-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+/* Toggle Switch */
+.audience-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 0.5rem;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Labels */
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.labels span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Content Blocks */
+.audience-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.audience-content .content {
+    display: none;
+    max-width: 600px;
+}
+
+.audience-content .content.active {
+    display: block;
+}
+
+.audience-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.audience-content p {
+    font-size: 1rem;
+    color: #555;
+}.audience-content .content {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.audience-content .content.active {
+    display: block;
+}
+
 
 /* Our Journey Section */
 .journey {
@@ -409,6 +524,24 @@ body.dark-mode a {
 
 .dot.active {
     background: #000;
+}
+
+.testimonials-container {
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+}
+
+.testimonial.active {
+    display: block;
+    animation: fade 0.5s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Core Values Section */
@@ -937,8 +1070,95 @@ body.dark-mode a {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px; /* You can adjust based on your content */
+    max-height: 200px; 
     padding-top: 0.5rem;
+}
+
+/* Chatbot Section */
+.chatbot {
+    background-color: #f8f9fb;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.chatbot h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.chat-window {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.chat-message {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background-color: #e6f0fa;
+    display: inline-block;
+}
+
+.chat-input-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.chat-input-area button {
+    padding: 10px 16px;
+    border: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.chat-input-area button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.brand-bar {
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}
+
+.brand-bar-track {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.brand-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    padding: 5px 10px;
 }
 
 /* Footer */
@@ -1082,3 +1302,10 @@ body.dark-mode a {
     font-size: 1rem;
     vertical-align: middle;
 }
+.visitor-counter {
+    font-size: 0.9rem;
+    color: #444;
+    text-align: center;
+    margin: 20px 0;
+}
+
