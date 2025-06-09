@@ -889,6 +889,57 @@ body.dark-mode a {
 .submit-button:hover {
     background-color: #333;
 }
+/* FAQ Section */
+.faq-section {
+    background-color: #f8f9fb;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    text-align: left;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: #007bff;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* You can adjust based on your content */
+    padding-top: 0.5rem;
+}
 
 /* Footer */
 .footer {
