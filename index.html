@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimhertX</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="#" alt="header logo">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Courses</li>
+                        <li>Explore</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dark-light">
+                <label for="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="drop-down" style="display: none;">
+                <div>
+                    <h3>Explore our pages</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Additional Information</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 96l0 224L64 320 64 96l320 0zM64 32C28.7 32 0 60.7 0 96L0 320c0 35.3 28.7 64 64 64l117.3 0-10.7 32L96 416c-17.7 0-32 14.3-32 32s14.3 32 32 32l256 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-74.7 0-10.7-32L384 384c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L64 32zm464 0c-26.5 0-48 21.5-48 48l0 352c0 26.5 21.5 48 48 48l64 0c26.5 0 48-21.5 48-48l0-352c0-26.5-21.5-48-48-48l-64 0zm16 64l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        <div>
+                            <h3>IT Courses</h3>
+                            <p>Learn essential IT skills for your future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+            <div class="hero">
+                <div>
+                    <h1>Empower Your Future with TimehertX</h1>
+                    <h3>At TimehertX, we believe in transforming education through innovative technology. Join us in unlocking your potential with our comprehensive e-learning solutions</h3>
+                    <div>
+                        <button>Get Started</button>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <section class="about">
+        <div>
+            <h3>Empower</h3>
+            <h1>Unlock Your Potential with Our Courses</h1>
+            <p>Discover a world of learning tailored to your needs. Our innovative platform offers diverse courses designed to help you succeed.</p>
+        </div>
+    </section>
+    <section class="products">
+        <div>
+            <div class="prodcut-card">
+                <img src="#" alt="">
+                <h3>IT Courses for Future Innovators</h3>
+                <p>Dive into our comprehensive IT courses and gain the skills needed for the digital age.</p>
+            </div>
+            <div class="prodcut-card">
+                <img src="#" alt="">
+                <h3>Prepare for University Entrance Exams</h3>
+                <p>Our expert-led prep courses ensure you’re ready to excel.</p>
+            </div>
+            <div class="prodcut-card">
+                <img src="#" alt="">
+                <h3>Achieve Your Degree Online with Flexibility</h3>
+                <p>Achieve Your Degree Online with Flexibility</p>
+            </div>
+        </div>
+        <div>
+            <button>Learn More</button>
+            <button>Enroll <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"/></svg></button>
+        </div>
+    </section>
+    <section class="vision">
+        <div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l50.7 0L9.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L256 109.3l0 50.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128c0-17.7-14.3-32-32-32L160 0zM576 80a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM448 208a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM400 384a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48 80a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm128 0a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM272 384a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm48 80a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM144 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM576 336a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm-48-80a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+                <div>
+                    <h1>Our Journey: Empowering Education Through Technology</h1>
+                    <p>
+                        TimehertX was founded with a vision to transform education in Ethiopia through innovative technology. Our mission is to provide accessible, high-quality learning experiences for all students, empowering them to reach their full potential.
+                    </p>
+                    
+                </div>
+                <div>
+                    <button>Learn More</button>
+                    <button>Enroll <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z"/></svg>
+                    </button>
+        </div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+    <section class="testimonials">
+    <div class="stars">★★★★★</div>
+
+    <div class="testimonial-item active">
+        <p class="testimonial-text">
+            "TimehertX transformed my learning experience, making complex topics accessible and engaging!
+            I couldn't have aced my exams without their support!"
+        </p>
+        <div class="profile">
+            <img src="amina.jpg" alt="Amina Tesfaye" class="avatar">
+            <div class="profile-info">
+                <h4>Amina Tesfaye</h4>
+                <p>Student, University</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-item">
+        <p class="testimonial-text">
+            "The courses at TimehertX are truly life-changing! The flexibility allowed me to learn at my own pace while balancing my job."
+        </p>
+        <div class="profile">
+            <img src="another-person.jpg" alt="John Doe" class="avatar">
+            <div class="profile-info">
+                <h4>John Doe</h4>
+                <p>Working Professional</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-controls">
+        <button class="prev">←</button>
+        <button class="next">→</button>
+    </div>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+
+    <section class="team-section">
+    <div class="team-header">
+        <p>Team</p>
+        <h2>Meet Our Team</h2>
+        <p>Meet the passionate individuals behind TimehertX</p>
+    </div>
+
+    <div class="team-members">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+            <img src="natnael.jpg" alt="Natnael Abnew">
+            <h3>Natnael Abnew</h3>
+            <p class="role">CEO</p>
+            <p>Driving innovation and excellence in e-learning solutions.</p>
+            <div class="social-icons">
+                <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="x-icon.svg" alt="X"></a>
+                <a href="#"><img src="globe-icon.svg" alt="Website"></a>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card">
+            <img src="abdi.jpg" alt="Abdi Tesfaye">
+            <h3>Abdi Tesfaye</h3>
+            <p class="role">UI/UX Designer</p>
+            <p>Leading technology development and implementation strategies.</p>
+            <div class="social-icons">
+                <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="x-icon.svg" alt="X"></a>
+                <a href="#"><img src="globe-icon.svg" alt="Website"></a>
+            </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card">
+            <img src="meron.jpg" alt="Meron Fikru">
+            <h3>Meron Fikru</h3>
+            <p class="role">Content Manager</p>
+            <p>Crafting compelling narratives to connect with our audience.</p>
+            <div class="social-icons">
+                <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="x-icon.svg" alt="X"></a>
+                <a href="#"><img src="globe-icon.svg" alt="Website"></a>
+            </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card">
+            <img src="hana.jpg" alt="Hana Mekonnen">
+            <h3>Hana Mekonnen</h3>
+            <p class="role">Lead AI Developer</p>
+            <p>Creating engaging content that inspires and educates.</p>
+            <div class="social-icons">
+                <a href="#"><img src="linkedin-icon.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="x-icon.svg" alt="X"></a>
+                <a href="#"><img src="globe-icon.svg" alt="Website"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-cta">
+        <h3>We're Teaching!</h3>
+        <p>Discover your potential with us today!</p>
+        <button>Courses Available</button>
+    </div>
+</section>
+
+    <section class="ai-assistant">
+    <div class="ai-assistant-content">
+        <h2>Meet Your AI Learning Assistant:<br>Your Guide to Educational Success</h2>
+        <p>Experience personalized learning with our AI-powered assistant. Get instant support and resources tailored to your educational journey.</p>
+
+        <div class="ai-features">
+            <div class="feature">
+                <h4>24/7 Support</h4>
+                <p>Access help anytime, anywhere, ensuring you never feel lost in your studies.</p>
+            </div>
+            <div class="feature">
+                <h4>Tailored Learning</h4>
+                <p>Receive customized recommendations based on your learning style and goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ai-assistant-image">
+        <img src="ai-image.jpg" alt="AI Learning Assistant">
+    </div>
+</section>
+
+    <section class="contact-section">
+    <div class="contact-content">
+        <p class="contact-subtitle">Connect</p>
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-description">We'd love to hear from you!</p>
+
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the Terms</label>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="footer-top">
+        <div class="footer-newsletter">
+            <h3>Logo</h3>
+            <p>Subscribe to our newsletter for the latest features and updates.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email here" required>
+                <button type="submit">Join</button>
+            </form>
+            <p class="small-text">By subscribing, you consent to our Privacy Policy and receiving updates.</p>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">E-books</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="#">📘 Facebook</a></li>
+                    <li><a href="#">📸 Instagram</a></li>
+                    <li><a href="#">❌ X</a></li>
+                    <li><a href="#">💼 LinkedIn</a></li>
+                    <li><a href="#">▶️ YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p>© 2025 TimehertX. All rights reserved.</p>
+        <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
