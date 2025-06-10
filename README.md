@@ -10,6 +10,8 @@ This project was built for Phase 3 of the Synth Test and features a full AI chat
 🔗 [View Deployed Site on GitHub Pages](https://natnaelabwe.github.io/TimehertX/)
 
 ---
+🔗 [View Deployed Site on NETLIFY](https://hilarious-syrniki-4b5a41.netlify.app/)
+
 
 ## 📁 Project Structure
 
