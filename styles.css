@@ -302,10 +302,6 @@ input:checked + .slider:before {
     max-width: 600px;
 }
 
-/* .audience-content .content.active { */
-    /* display: block; */
-/* } */
-
 .audience-content h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
